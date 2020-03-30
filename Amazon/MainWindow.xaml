@@ -1,0 +1,21 @@
+﻿<Window x:Class="Amazon.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Amazon"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="167*"/>
+            <ColumnDefinition Width="167*"/>
+            <ColumnDefinition Width="459*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="23" Margin="0,48,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="397" Grid.Column="1" TextChanged="TextBox_TextChanged_1"/>
+        <Button Content="访问地址" Margin="23,48,69,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="-179,48,0,0" VerticalAlignment="Top"/>
+        <TextBox Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="170" Margin="23,119,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="605" TextChanged="TextBox_TextChanged"/>
+
+    </Grid>
+</Window>
